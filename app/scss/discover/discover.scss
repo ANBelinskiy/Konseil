@@ -1,0 +1,121 @@
+.discover {
+    background: url(../img/discover/discover-bg.png) no-repeat center;
+    background-size: cover;
+    height: 870px;
+    padding: 40px 35px;
+    @media (max-width: 990px) {
+        padding: 60px 20px;
+        height: auto;
+    }
+    @media (max-width: 576px) {
+        padding: 60px 15px;
+    }
+}
+
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    // @media (max-width: 1280px) {
+    //     grid-gap: 70px;
+    // }
+    // @media (max-width: 1100px) {
+    //     grid-gap: 40px;
+    // }
+    @media (max-width: 990px) {
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    .discover-box:first-child {
+        position: relative;
+        top: 20px;
+        @media (max-width: 990px) {
+            top: 0;
+        }
+    }
+    .discover-box:nth-child(2) {
+        position: relative;
+        top: 40px;
+        @media (max-width: 990px) {
+            top: 0;
+        }
+    }
+    .discover-box:nth-child(3) {
+        position: relative;
+        top: 60px;
+        @media (max-width: 990px) {
+            top: 0;
+        }
+    }
+    .discover-box:nth-child(4) {
+        position: relative;
+        top: 20px;
+        @media (max-width: 990px) {
+            top: 0;
+            grid-row-start: 2;
+        }
+    }
+    .discover-box:nth-child(5) {
+        position: relative;
+        top: 40px;
+        @media (max-width: 990px) {
+            top: 0;
+            grid-row-start: 4;
+        }
+    }
+}
+
+.discover-box {
+    background: #fff;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, .25);
+    border-radius: 2px;
+    padding: 8px 15px;
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+    @media (max-width: 990px) {
+        height: auto;
+    }
+    .chese-icon {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .disvocer-num {
+        color: #003ABD;
+        font: 300 1.75rem 'Barlow', sans-serif;
+        margin-bottom: 15px;
+    }
+    .title-sm {
+        height: 80px;
+        margin-bottom: 0;
+        @media (max-width: 990px) {
+            height: auto;
+            margin-bottom: 15px;
+        }
+    }
+    .text-sm {
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+    }
+    .chese-bg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.discover-box-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 60px;
+    justify-content: center;
+    @media (max-width: 990px) {
+        top: 0;
+    }
+}

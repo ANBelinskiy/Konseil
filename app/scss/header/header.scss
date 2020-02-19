@@ -1,0 +1,180 @@
+header {
+    position: absolute;
+    width: 100%;
+    @media (max-width: 1280px) {
+        width: 94%;
+        padding: 0 35px;
+    }
+    @media (max-width: 990px) {
+        background: #fff;
+        position: fixed;
+        width: auto;
+        left: 0;
+        right: -1px;
+        padding: 0 20px;
+        top: -1px;
+        z-index: 9999;
+        box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    }
+    @media (max-width: 576px) {
+        padding: 0 12px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @media (max-width: 990px) {
+            display: none;
+        }
+        a {
+            letter-spacing: 2px;
+            font: 300 1.25rem 'Barlow', sans-serif;
+            margin-bottom: 20px;
+            transition: .2s;
+            position: relative;
+            color: #fff;
+            transition: .3s ease;
+            @media (max-width: 990px) {
+                color: #00226E;
+                display: block;
+                margin-bottom: 15px;
+                font: 300 1rem 'Barlow', sans-serif;
+            }
+            &:hover {
+                transition: .3s ease;
+                font: 500 1.25rem 'Barlow', sans-serif;
+                @media (max-width: 990px) {
+                    font: 300 1rem 'Barlow', sans-serif;
+                }
+                &::after {
+                    transition: .35s ease;
+                    content: '';
+                    height: 2px;
+                    background: linear-gradient(178.26deg, #FFC200 0%, #FF785E 100%);
+                    border-radius: 2px;
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+        a:last-child {
+            margin: 0;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    @media (max-width: 990px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        height: 23px;
+    }
+}
+
+.container-lang {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 990px) {
+        margin: 0;
+        padding: 8px 0;
+        justify-content: space-between;
+    }
+    a {
+        letter-spacing: 1px;
+        font: 500 1.125rem 'Barlow', sans-serif;
+        margin-left: 10px;
+        color: #fff;
+        transition: .3s;
+        @media (max-width: 990px) {
+            color: #00226E;
+        }
+        @media (max-width: 576px) {
+            font: 500 1rem 'Barlow', sans-serif;
+        }
+        &:hover {
+            color: #feb60f;
+        }
+    }
+    .active-lang {
+        color: #feb60f;
+    }
+}
+
+.logo-phone-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
+
+.logo-box {
+    img {
+        max-width: 100%;
+        height: auto;
+        @media (max-width: 576px) {
+            height: 30px;
+        }
+        @media (max-width: 380px) {
+            height: 20px;
+        }
+    }
+}
+
+.phone-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 576px) {
+        align-items: flex-end;
+    }
+    .phone-link {
+        color: #fff;
+        font: 500 1.2rem 'Barlow', sans-serif;
+        @media (max-width: 990px) {
+            color: #00226E;
+        }
+        @media (max-width: 576px) {
+            font: 500 .9rem 'Barlow', sans-serif;
+        }
+        &::before {
+            content: url(../img/icon/phone-header.svg);
+            position: relative;
+            top: 5px;
+            right: 7px;
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+        transition: .3s;
+        &:hover {
+            color: #feb60f;
+        }
+    }
+    .phone-call {
+        font: 500 .87rem 'Barlow', sans-serif;
+        color: #FFF;
+        cursor: pointer;
+        opacity: .6;
+        @media (max-width: 990px) {
+            color: #000;
+        }
+    }
+}

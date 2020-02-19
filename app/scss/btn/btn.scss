@@ -1,0 +1,19 @@
+.btn-gold {
+    background: linear-gradient(162.65deg, #FFC200 0%, #FF785E 100%);
+    border-radius: 2px;
+    padding: 14px 30px;
+    color: #FFF;
+    letter-spacing: 1px;
+    display: inline-block;
+    outline: none;
+    transition: .3s;
+    font: 500 1.2rem 'Barlow', sans-serif;
+    &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+        background: linear-gradient(162.65deg, #FFC200 20%, #FF785E 80%);
+    }
+    @media (max-width: 990px) {
+        font: 1rem 'Barlow', sans-serif;
+        padding: 12px 25px;
+    }
+}

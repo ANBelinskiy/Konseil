@@ -1,0 +1,186 @@
+footer {
+    background: url(../img/footer/footer-bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-gap: 50px;
+    position: relative;
+    @media (max-width: 1100px) {
+        grid-gap: 30px;
+        grid-template-columns: 5fr 4fr 4fr;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px 0;
+    }
+    @media (max-width: 360px) {
+        grid-gap: 15px;
+    }
+}
+
+.footer-box-info {
+    background: url(../img/footer/footer-bg-box.png) no-repeat center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    @media (max-width: 990px) {
+        height: auto;
+        background: transparent;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        justify-content: flex-start;
+    }
+    @media (max-width: 360px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .footer-info-text {
+        width: 175px;
+        @media (max-width: 990px) {
+            width: auto;
+            position: relative;
+            top: -10px;
+        }
+    }
+    .logo-footer {
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    p {
+        margin-bottom: 10px;
+        font-size: .87rem;
+        font-weight: 500;
+        @media (max-width: 990px) {
+            color: #fff;
+        }
+    }
+    a {
+        display: block;
+        position: relative;
+        color: #00226E;
+        font: 500 .79rem 'Barlow', sans-serif;
+        margin-bottom: 5px;
+        @media (max-width: 990px) {
+            color: #fff;
+        }
+    }
+    .phone {
+        display: flex;
+        &::before {
+            content: url(../img/footer/phone.svg);
+            display: block;
+            position: relative;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+    .ws {
+        display: flex;
+        &::before {
+            content: url(../img/footer/whatapp.svg);
+            display: block;
+            position: relative;
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
+    .mail {
+        display: flex;
+        white-space: nowrap;
+        &::before {
+            content: url(../img/footer/mail.svg);
+            display: block;
+            position: relative;
+            height: 20px;
+            margin-right: 5px;
+            top: 1px;
+        }
+    }
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .footer-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 155px;
+        @media (max-width: 990px) {
+            height: 50px;
+        }
+    }
+    .footer-link {
+        margin-bottom: 10px;
+        color: #fff;
+        font: 700 .87rem 'Barlow', sans-serif;
+    }
+    .footer-link-sm {
+        color: #fff;
+        font: 500 .8rem 'Barlow', sans-serif;
+        margin-bottom: 5px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    a {
+        transition: .3s;
+        &:hover {
+            color: #ffb90c;
+        }
+    }
+}
+
+.footer-about {
+    display: flex;
+    align-items: center;
+    @media (max-width: 990px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        text-align: right;
+    }
+    @media (max-width: 360px) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        text-align: left;
+    }
+}
+
+.about-footer-text {
+    position: relative;
+    color: #fff;
+    font: 500 .87rem 'Barlow', sans-serif;
+    @media (max-width: 576px) {
+        font-size: .8rem;
+    }
+}
+
+.click-top {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    transition: .3s;
+    @media (max-width: 990px) {
+        right: 5px;
+        bottom: 10px;
+    }
+    &:hover {
+        transform: scale(1.2);
+    }
+}
