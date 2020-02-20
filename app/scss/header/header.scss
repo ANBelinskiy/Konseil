@@ -30,6 +30,10 @@ header {
 
         li {
             margin-bottom: 20px;
+            @media (max-width: 990px) {
+                margin-bottom: 0;
+                line-height: 0;
+            }
             &:last-child {
                 margin: 0;
                 padding-bottom: 15px;
@@ -45,32 +49,10 @@ header {
                 color: #00226E;
                 display: block;
                 margin-bottom: 15px;
-                font: 300 1rem 'Barlow', sans-serif;
+                font: 500 1rem 'Barlow', sans-serif;
             }
             &:hover {
                 transition: .35s ease;
-                font: 500 1.25rem 'Barlow', sans-serif;
-                @media (max-width: 990px) {
-                    font: 300 1rem 'Barlow', sans-serif;
-                }
-                &::after {
-                    transition: .35s ease;
-                    content: '';
-                    height: 2px;
-                    background: linear-gradient(178.26deg, #FFC200 0%, #FF785E 100%);
-                    border-radius: 2px;
-                    display: block;
-                    width: 100%;
-                    position: absolute;
-                    @media (max-width: 990px) {
-                        display: none;
-                    }
-                }
-            }
-
-            &.active-item {
-                transition: .3s ease;
-                font: 500 1.25rem 'Barlow', sans-serif;
                 @media (max-width: 990px) {
                     font: 300 1rem 'Barlow', sans-serif;
                 }
@@ -92,6 +74,109 @@ header {
     }
 }
 
+
+header nav a[aria-current="page"] {
+    transition: .3s ease;
+    font: 500 1.25rem 'Barlow', sans-serif;
+    @media (max-width: 990px) {
+        font: 300 1rem 'Barlow', sans-serif;
+    }
+    &::after {
+        transition: .35s ease;
+        content: '';
+        height: 2px;
+        background: linear-gradient(178.26deg, #FFC200 0%, #FF785E 100%);
+        border-radius: 2px;
+        display: block;
+        width: 100%;
+        position: absolute;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+nav > ul > li {
+    position: relative;
+    font: 300 20px 'Barlow', sans-serif;
+    @media (max-width: 990px) {
+        font: 500 1rem 'Barlow', sans-serif;
+    }
+    a{
+        &:hover {
+            transition: .35s ease;
+            display: inline-block;
+            color: #feb60f;
+            border: none;
+            @media (max-width: 990px) {
+                font: 500 1rem 'Barlow', sans-serif;
+            }
+        }
+    }
+}
+
+nav > ul > li > a {
+    @media (max-width: 990px) { 
+        margin-bottom: 10px;
+    }
+}
+
+nav > ul > li:hover .sub-menu {
+    display: block;
+    a {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+header nav ul.sub-menu a {
+    @media (max-width: 990px) { 
+        font: 300 .95rem 'Barlow', sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
+header nav ul.sub-menu a[aria-current="page"] {
+    color: #feb60f;
+}
+
+header nav .sub-menu {
+  position: absolute;
+  top: 5px;
+  right: 90px;
+  padding: 10px;
+  z-index: 10;
+  width: 210px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  display: none;
+  @media (max-width: 990px) { 
+    display: block;
+    position: static;
+    text-align: left;
+    padding: 0;
+    list-style-type: circle;
+  }
+
+  li{
+    margin: 0 10px 3px 0;
+    @media (max-width: 990px) {
+       margin: 0 0 0 20px;
+       list-style-type: circle;
+
+    }
+    &:last-child {
+        margin: 0 10px 3px 0;
+        @media (max-width: 990px) { 
+           margin: 0 0 0 20px;
+           padding: 0;
+        }
+    }
+  }
+}
+
 .menu-btn {
     display: none;
     cursor: pointer;
@@ -105,7 +190,19 @@ header {
     }
 }
 
-.lang-menu {
+.lang-menu > ul {
+    display: flex;
+}
+
+#menu-item-19 {
+    display: none;
+}
+
+#menu-item-9999999999 > a > span {
+    color: #feb60f;
+}
+
+.sub-menu {
     display: flex;
 }
 
@@ -123,11 +220,13 @@ header {
 
     li {
         margin-left: 10px;
+        display: flex;
     }
     a {
         letter-spacing: 1px;
         font: 500 1.125rem 'Barlow', sans-serif;
         color: #fff;
+        text-transform: uppercase;
         transition: .3s;
         @media (max-width: 990px) {
             color: #00226E;
@@ -138,9 +237,6 @@ header {
         &:hover {
             color: #feb60f;
         }
-    }
-    .active-lang {
-        color: #feb60f;
     }
 }
 

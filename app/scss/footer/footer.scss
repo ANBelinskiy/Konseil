@@ -114,10 +114,7 @@ footer {
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    .footer-item {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+    .menu-item {
         height: 155px;
         @media (max-width: 990px) {
             height: 50px;
@@ -128,18 +125,25 @@ footer {
         color: #fff;
         font: 700 .87rem 'Barlow', sans-serif;
     }
-    .footer-link-sm {
+    a {
         color: #fff;
         font: 500 .8rem 'Barlow', sans-serif;
+        transition: .3s;
         margin-bottom: 5px;
         @media (max-width: 990px) {
             display: none;
         }
-    }
-    a {
-        transition: .3s;
         &:hover {
             color: #ffb90c;
+        }
+    }
+    .sub-menu {
+        flex-direction: column;
+        @media (max-width: 990px) {
+            display: none;
+        }
+        .menu-item {
+            height: auto;
         }
     }
 }

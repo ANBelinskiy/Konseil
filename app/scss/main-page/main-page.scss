@@ -18,9 +18,17 @@
 
 .main-screen-box {
     max-width: 800px;
+
+    @media (max-width: 1366px) {
+        margin: 3% 0 0;
+    }
+
     .main-title {
         color: #0033a9;
         font: 700 6.2rem 'Barlow', sans-serif;
+        @media (max-width: 1100px) {
+            font: 700 5.2rem 'Barlow', sans-serif;
+        }
         @media (max-width: 990px) {
             font: 700 4rem 'Barlow', sans-serif;
         }
@@ -36,6 +44,9 @@
         font: 500 3.9rem 'Barlow', sans-serif;
         margin-bottom: 10px;
         margin-top: -8px;
+        @media (max-width: 1100px) {
+            font: 500 3rem 'Barlow', sans-serif;
+        }
         @media (max-width: 990px) {
             margin-top: 0;
             font: 500 2.5rem 'Barlow', sans-serif;
