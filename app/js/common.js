@@ -5,13 +5,11 @@ $(document).ready(function() {
     $(".menu-btn").on("click", function() {
         $("nav").slideToggle(200);
     });
+
     $(".click-top").on("click", function() {
         $('html, body').animate({ scrollTop: 0 }, '400');
     });
 
-    // $(".btn-more").on("click", function(){
-    //     $(this).prev(".item-none").slideDown(100);
-    // });
 
     $(".btn-more").on("click", function(){
 

@@ -128,7 +128,7 @@
 .slider-box-tls {
     display: flex;
     flex-direction: column;
-    max-width: 354px;
+    max-width: 360px;
     position: relative;
     width: 100%;
     display: block;
@@ -145,18 +145,18 @@
 }
 
 .position-box {
-    height: 200px;
-    max-width: 200px;
+    height: 170px;
+    max-width: 195px;
     position: relative;
     width: 100%;
     overflow: hidden;
-    top: 70px;
+    top: 60px;
     img {
         position: absolute;
         z-index: 0;
-        max-width: 195px;
+        max-width: 190px;
         width: 100%;
-        height: 170px;
+        height: 157px;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
@@ -169,7 +169,7 @@
     position: relative;
     width: 100%;
     display: block;
-    height: 200px;
+    height: 100%;
     z-index: 5; 
 }
 
@@ -265,8 +265,7 @@
     }
     .slick-dots {
         text-align: left;
-        margin-top: 20px;
-        bottom: -90px;
+        bottom: -21.4%;
         padding: 0 0 0 25px;
     }
 
@@ -278,13 +277,14 @@
     .slick-dots a {
         color: #003ABD;
         letter-spacing: 1px;
-        font: 300 1.5rem 'Barlow', sans-serif;
+        font: 300 16px 'Barlow', sans-serif;
+        font-weight: 300;
     }
 
     .slick-active {
         a {
             color: #feb016;
-            font:700 2rem 'Barlow', sans-serif;
+            font: 600 28px 'Barlow', sans-serif;
             position: relative;
             top: 2px;
             @media (max-width: 990px) {
@@ -296,7 +296,7 @@
     .slick-prev
     {
         left: 0;
-        top: 119%;
+        top: 118.5%;
         z-index: 10;
         @media (max-width: 990px) {
             left: 0;
@@ -325,8 +325,8 @@
 
     .slick-next
     {
-        left: 185px;
-        top: 119%;
+        left: 156px;
+        top: 118.5%;
         right: auto;
         z-index: 10;
         @media (max-width: 990px) {
