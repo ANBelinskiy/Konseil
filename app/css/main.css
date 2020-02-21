@@ -771,7 +771,7 @@ header nav .sub-menu {
   .services-box .hide-services {
     position: absolute;
     opacity: 0; }
-    .services-box .hide-services a {
+    .services-box .hide-services span {
       position: relative;
       right: -100px;
       top: 5px;
@@ -782,7 +782,7 @@ header nav .sub-menu {
       font: 500 1.125rem 'Barlow', sans-serif;
       font-style: italic; }
       @media (max-width: 990px) {
-        .services-box .hide-services a {
+        .services-box .hide-services span {
           font-size: 1rem;
           right: -80px; } }
   .services-box .services-text {
@@ -1484,6 +1484,9 @@ header nav .sub-menu {
         .offer-container .slider-box-sm p:last-child {
           margin: 0;
           top: 0; } }
+    .offer-container .slider-box-sm .slider-text-descr {
+      font: 300 1rem 'Barlow', sans-serif;
+      color: #fff; }
   .offer-container .slider {
     max-width: 70%;
     margin: 0; }
@@ -1492,21 +1495,21 @@ header nav .sub-menu {
         max-width: 100%; } }
   .offer-container .slider-text {
     color: #003ABD;
-    font: 500 3.2rem 'Barlow', sans-serif;
+    font: 500 3rem 'Barlow', sans-serif;
     text-shadow: 4px 2px 7px #969696; }
     @media (max-width: 768px) {
       .offer-container .slider-text {
-        font: 500 3rem 'Barlow', sans-serif; } }
+        font: 500 2.7rem 'Barlow', sans-serif; } }
     @media (max-width: 576px) {
       .offer-container .slider-text {
         font: 500 1.5rem 'Barlow', sans-serif; } }
     .offer-container .slider-text span {
       color: #fff;
-      font: 700 4.5rem 'Barlow', sans-serif;
+      font: 700 4.3rem 'Barlow', sans-serif;
       text-shadow: 4px 2px 7px #969696; }
       @media (max-width: 768px) {
         .offer-container .slider-text span {
-          font: 500 3.5rem 'Barlow', sans-serif; } }
+          font: 500 3.3rem 'Barlow', sans-serif; } }
       @media (max-width: 576px) {
         .offer-container .slider-text span {
           font: 500 1.8rem 'Barlow', sans-serif; } }
