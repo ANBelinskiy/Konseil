@@ -1,0 +1,146 @@
+.accounting-screen {
+    background: url(../img/acc/BG1.png) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 40px;
+    @media (max-width: 990px) {
+        margin-bottom: 0;
+        height: 100vh;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+
+.accounting-banner {
+    max-width: 630px;   
+    position: relative;
+    top: 100px;
+    @media (max-width: 990px) {
+        top: 0;
+    }
+    p {
+        font-size: 1.7rem;
+        line-height: 28px;
+        @media (max-width: 990px) {
+            font-size: 1.4rem;
+        }
+        @media (max-width: 990px) {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+.accounting {
+    position: relative;
+    &::before {
+        content: url(../img/acc/sota-1.png);
+        position: absolute;
+        left: 0;
+        top: 100px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.accounting-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    .accounting-box-xl {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #fff;
+        max-width: 420px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 20px;
+        margin-bottom: 60px;
+        &::before {
+            content: url(../img/for-companiens/line-2.svg);
+            position: absolute;
+            left: 200px;
+            bottom: -120px;
+            z-index: -9;
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+        @media (max-width: 990px) {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .accounting-title {
+            text-align: center;
+            font: 300 1.25rem 'Barlow', sans-serif;
+            color: #00226E;
+            margin-bottom: 25px;
+        }
+        .accounting-text-box {
+            padding: 25px;
+            margin-top: 15px;
+            @media (max-width: 990px) {
+                padding: 20px;
+            }
+        }
+        .demand-box {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            .demand-title {
+                margin-bottom: 5px;
+                font: 700 1.25rem 'Barlow', sans-serif;
+                color: #0753e2;
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+            .demand-text {
+                position: relative;
+                top: -5px;
+                font-size: .87rem;
+                color: #2f6ee7;
+            }
+        }
+        .btn-gold {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+        }
+    }
+    .accounting-box-sm {
+        padding: 15px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+    .accounting-box-title {
+        font: 700 1.125rem 'Barlow', sans-serif;
+        color: #003ABD;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+    .accounting-box-punkt {
+        margin: 30px 0;
+    }
+}

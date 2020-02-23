@@ -1,0 +1,545 @@
+.for-companiens-screen {
+    background: url(../img/about/about-bg.png) no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 40px;
+    @media (max-width: 990px) {
+        margin-bottom: 0;
+        height: 100vh;
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+
+
+.about-conseil {
+    max-width: 700px;
+    position: relative;
+    top: 40px;
+    @media (max-width: 990px) {
+        top: 0;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .text-xl {
+        line-height: 31px;
+        font-size: 1.25rem;
+        @media (max-width: 990px) {
+            font-size: .87rem;
+            line-height: 25px;
+        }
+    }
+}
+
+.conseil-help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+    bottom: -110px;
+    background: #fff;
+    padding: 30px 20px;
+    overflow: hidden;
+    @media (max-width: 990px) {
+        bottom: 0;
+        padding: 15px;
+    }
+    &::before {
+        content: url(../img/for-companiens/sota-bg.png);
+        position: absolute;
+        left: -10px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .text-xl {
+        line-height: 31px;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        @media (max-width: 990px) {
+            font-size: 1.1rem;
+        }
+        br {
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.sole {
+    position: relative;
+    &::after {
+        content: url(../img/for-companiens/sota-1.png);
+        position: absolute;
+        z-index: -4;
+        right: 0;
+        bottom: -200px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    &::before {
+        content: url(../img/for-companiens/for-companion-3.png);
+        position: absolute;
+        z-index: -2;
+        right: -50px;
+        bottom: -250px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .big-text {
+        font-size: 1.2rem;
+        max-width: 1000px;
+        margin-bottom: 40px;
+        font-weight: 600;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.sole-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        flex-direction: column;
+    }
+    .sole-box-punkt {
+        max-width: 500px;
+        @media (max-width: 990px) {
+            margin-bottom: 40px;
+        }
+    }
+    .sole-box-xl {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #fff;
+        max-width: 420px;
+        margin: 0 auto;
+        margin-right: 50px;
+        position: relative;
+        z-index: 2;
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @media (max-width: 990px) {
+            margin: 0 auto;
+        }
+        .sole-title {
+            text-align: center;
+            font: 300 1.25rem 'Barlow', sans-serif;
+            color: #00226E;
+            margin-bottom: 25px;
+        }
+        .sole-text-box {
+            padding: 25px;
+            @media (max-width: 990px) {
+                padding: 20px;
+            }
+        }
+        .demand-box {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            .demand-title {
+                margin-bottom: 5px;
+                font: 700 1.25rem 'Barlow', sans-serif;
+                color: #0753e2;
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+            .demand-text {
+                position: relative;
+                top: -5px;
+                font-size: .87rem;
+                color: #2f6ee7;
+            }
+        }
+        .btn-gold {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+        }
+    }
+}
+
+
+.table-info-about {
+    margin-bottom: 35px;
+    .text-xl {
+        max-width: 480px;
+    }
+}
+
+.table-info{
+    margin-bottom: 40px;
+    .table-info-container {
+        display: grid;
+        position: relative;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            border: 1px solid #fff;
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            right: 0;
+            border: 1px solid #fff;
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+    }    
+}
+
+
+.table-info-box-sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 105px;
+    padding: 10px 15px;
+    border: 1px solid #C4C4C4; 
+    background: transparent;
+    .title {
+        font-weight: 700;
+    }
+    p {
+        text-align: center;
+    }
+    a {
+        margin: 0 auto;
+    }
+}
+
+.table-info-box-sm:last-child {
+    border-bottom: 1px solid #fff;
+}
+
+.table-info-box-sm:nth-child(2n) {
+    background: #F9F9F9;
+} 
+
+.table-info-box-sm-btn {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @media (max-width: 576px) {
+        margin: 30px 0;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -45px;
+        width: 100%;
+        background: #fff;
+        height: 10px;
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+}
+
+.сop-2 {
+    position: relative;
+    &::before {
+        display: none;
+    }
+    &::after {
+        content: url(../img/for-companiens/sota-1.png);
+        position: absolute;
+        z-index: -2;
+        left: 0;
+        bottom: -460px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.foreign {
+    position: relative;
+    &::before{
+        content: url(../img/for-companiens/for-companion-best-2.png);
+        position: absolute;
+        right: -100px;
+        bottom: 80px;
+        z-index: -3;
+        @media (max-width: 1280px) {
+            bottom: 30px;
+        }
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    &::after{
+        content: url(../img/for-companiens/sota-2.png);
+        position: absolute;
+        left: 0;
+        top: -200px;
+        z-index: -2;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.foreign-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+    @media (max-width: 1280px) {
+        grid-gap: 40px;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .foreign-box-info {
+        margin-top: 130px;
+        @media (max-width: 1280px) {
+            margin-top: 40px;
+        }
+        @media (max-width: 990px) {
+            margin-top:0;
+        }
+        .text-xl {
+            margin-bottom: 10px;
+            strong {
+                br {
+                    @media (max-width: 990px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.foreign-box{
+    margin: 10px 0;
+
+    .foreign-box-title {
+        font: 700 1.125rem 'Barlow', sans-serif;
+        color: #003ABD;
+        padding-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    .foreign-box-xl {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        background: #fff;
+        max-width: 420px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        background: #fff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 20px;
+        margin-bottom: 60px;
+        &::before {
+            content: url(../img/for-companiens/line-2.svg);
+            position: absolute;
+            left: 200px;
+            bottom: -120px;
+            z-index: -9;
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+        @media (max-width: 990px) {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .foreign-title {
+            text-align: center;
+            font: 300 1.25rem 'Barlow', sans-serif;
+            color: #00226E;
+            margin-bottom: 25px;
+        }
+        .foreign-text-box {
+            padding: 25px;
+            @media (max-width: 990px) {
+                padding: 20px;
+            }
+        }
+        .demand-box {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            .demand-title {
+                margin-bottom: 5px;
+                font: 700 1.25rem 'Barlow', sans-serif;
+                color: #0753e2;
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+            .demand-text {
+                position: relative;
+                top: -5px;
+                font-size: .87rem;
+                color: #2f6ee7;
+            }
+        }
+        .btn-gold {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+        }
+    }
+    .foreign-box-sm {
+        padding: 15px;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.bestseller {
+    position: relative;
+    &::before{
+        content: url(../img/for-companiens/for-companion-best.png);
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        z-index: -2;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    &::after{
+        content: url(../img/for-companiens/line.svg);
+        position: absolute;
+        right: 350px;
+        top: 80px;
+        z-index: -2;
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.bestseller-wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.bestseller-box-wrap {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 990px) {
+        margin-bottom: 40px;
+    }
+
+    .bestseller-box-sm {
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, .25);
+        border-radius: 2px;
+        padding: 20px;
+        display: inline-block;
+        background: #fff;
+        max-width: 570px;
+        @media (max-width: 1200px) {
+            max-width: 450px;
+        }
+    }
+
+    .btn-gold-wrapper {
+        margin: 0 auto;
+        margin-top: 60px;
+        @media (max-width: 990px) {
+            margin-top: 30px;
+        }
+    }
+
+    
+}
+
+.bestseller-box-xl {
+    max-width: 420px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media (max-width: 990px) {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .bestseller-title {
+        text-align: center;
+        font: 300 1.25rem 'Barlow', sans-serif;
+        color: #00226E;
+        margin-bottom: 25px;
+    }
+    .bestseller-text-box {
+        padding: 25px;
+        @media (max-width: 990px) {
+            padding: 20px;
+        }
+    }
+    .demand-box {
+        text-align: center;
+        .demand-title {
+            text-decoration: underline;
+            margin-bottom: 5px;
+            font: 700 1.5rem 'Barlow', sans-serif;
+            color: #2f6ee7;
+        }
+        .demand-text {
+            color: #2f6ee7;
+        }
+    }
+    .btn-gold {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+    }
+}

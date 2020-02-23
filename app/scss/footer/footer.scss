@@ -130,9 +130,6 @@ footer {
         font: 500 .8rem 'Barlow', sans-serif;
         transition: .3s;
         margin-bottom: 5px;
-        @media (max-width: 990px) {
-            display: none;
-        }
         &:hover {
             color: #ffb90c;
         }

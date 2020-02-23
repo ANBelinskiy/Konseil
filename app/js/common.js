@@ -1,5 +1,9 @@
 $(document).ready(function() {
-
+$('.main-screen-box').addClass('show-left');
+$('.main-title, .main-text, .main-subtitle, .menu-btn img').addClass('anim-left');
+$('.main-menu-services li').addClass('anim-right');
+// $('.main-title, .main-text, .main-subtitle').addClass('anim-bottom');
+$('.main-screen-box .btn-gold, .phone-box, .lang-menu, .main-title, .main-text, .main-subtitle, .menu-btn img').addClass('show');
 //////////////////////////// Tkach js //////////////////////////////////
 
     $(".menu-btn").on("click", function() {
@@ -101,6 +105,29 @@ $(document).ready(function() {
 
 /////////////////////////// Gritsyuk js ////////////////////////////////
 
+var $status = $('.numberInfo');
+    var $slickElement = $('.newspaper-slider');
+
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $status.text(i + '/' + slick.slideCount);
+    });
+
+    $slickElement.slick({
+        dots: true
+    });
+
+    var $statusNumber = $('.numberInfoSeminar');
+    var $slickElement = $('.seminar-slider');
+
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var j = (currentSlide ? currentSlide : 0) + 1;
+        $statusNumber.text(j + '/' + slick.slideCount);
+    });
+
+    $slickElement.slick({
+        dots: true
+});
 
 /////////////////////////// Gritsyuk js ////////////////////////////////
 
