@@ -16,16 +16,18 @@
     }
 }
 
-
-
 .about-conseil {
     max-width: 700px;
     position: relative;
-    top: 40px;
+    color: #00226E;
+    top: 50px;
     @media (max-width: 990px) {
         top: 0;
         margin-bottom: 40px;
         margin-top: 10px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 50px;
     }
     .text-xl {
         line-height: 31px;
@@ -48,6 +50,7 @@
     background: #fff;
     padding: 30px 20px;
     overflow: hidden;
+    color: #00226E;
     @media (max-width: 990px) {
         bottom: 0;
         padding: 15px;
@@ -66,6 +69,7 @@
         font-weight: bold;
         text-align: center;
         position: relative;
+        color: #00226E;
         z-index: 2;
         @media (max-width: 990px) {
             font-size: 1.1rem;
@@ -80,6 +84,7 @@
 
 .sole {
     position: relative;
+    color: #00226E;
     &::after {
         content: url(../img/for-companiens/sota-1.png);
         position: absolute;
@@ -187,6 +192,7 @@
 }
 
 .table-info{
+    color: #00226E;
     margin-bottom: 40px;
     .table-info-container {
         display: grid;
@@ -254,6 +260,7 @@
 } 
 
 .table-info-box-sm-btn {
+    color: #00226E;
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -277,6 +284,7 @@
 
 .сop-2 {
     position: relative;
+    color: #00226E;
     &::before {
         display: none;
     }
@@ -294,6 +302,7 @@
 
 .foreign {
     position: relative;
+    color: #00226E;
     &::before{
         content: url(../img/for-companiens/for-companion-best-2.png);
         position: absolute;
@@ -321,6 +330,7 @@
 
 .foreign-container {
     display: grid;
+    color: #00226E;
     grid-template-columns: 1fr 1fr;
     grid-gap: 80px;
     @media (max-width: 1280px) {
@@ -353,7 +363,7 @@
 
 .foreign-box{
     margin: 10px 0;
-
+    color: #00226E;
     .foreign-box-title {
         font: 700 1.125rem 'Barlow', sans-serif;
         color: #003ABD;
@@ -438,6 +448,7 @@
 }
 
 .bestseller {
+    color: #00226E;
     position: relative;
     &::before{
         content: url(../img/for-companiens/for-companion-best.png);
@@ -524,6 +535,7 @@
         }
     }
     .demand-box {
+        color: #00226E;
         text-align: center;
         .demand-title {
             text-decoration: underline;

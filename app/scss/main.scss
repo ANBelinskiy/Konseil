@@ -39,3 +39,8 @@ body::-webkit-scrollbar-track {
 button, button:hover, button:focus, button:active, select:hover, select:active, select:focus, select {
 	outline: none !important;
 }
+
+.a2a_kit {
+	position: absolute;
+	z-index: -1;
+}

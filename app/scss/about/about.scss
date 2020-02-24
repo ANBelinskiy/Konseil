@@ -235,8 +235,9 @@
     }
 
     @media (max-width: 576px) {
-        padding: 15px 30px 20px 15px;
-        width: 90%;
+        padding: 10px;
+        width: 95%;
+        margin-top: -80px;
     }
 
     & img {
@@ -556,8 +557,7 @@
 
     @media (max-width: 1280px) {
         width: 921px;
-        margin: 0 auto;
-        margin-bottom: 150px;
+        margin: 0 auto 150px;
     }
 
     @media (max-width: 990px) {
@@ -567,6 +567,7 @@
 
     @media (max-width: 576px) {
         grid-template-columns: 1fr;
+        margin-bottom: 20px;
     }
 
     .team-item {

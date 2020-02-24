@@ -2,7 +2,6 @@ $(document).ready(function() {
 $('.main-screen-box').addClass('show-left');
 $('.main-title, .main-text, .main-subtitle, .menu-btn img').addClass('anim-left');
 $('.main-menu-services li').addClass('anim-right');
-// $('.main-title, .main-text, .main-subtitle').addClass('anim-bottom');
 $('.main-screen-box .btn-gold, .phone-box, .lang-menu, .main-title, .main-text, .main-subtitle, .menu-btn img').addClass('show');
 //////////////////////////// Tkach js //////////////////////////////////
 
@@ -36,25 +35,6 @@ $('.main-screen-box .btn-gold, .phone-box, .lang-menu, .main-title, .main-text, 
 
     });
 
-    // $(function() {
-
-    //     $('div.tabs__caption').on('click', 'div:not(.active)', function() {
-    //         $(this)
-    //             .addClass('active').siblings().removeClass('active')
-    //             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-    //     });
-
-    // });
-
-    // $(".vido-box").on("click", function() {
-    //     $(this).removeClass("play-icon");
-    // });
-
-    // $(".video-play").on("click", function() {
-    //     $(this)[0].play();
-    //     $(this).attr('controls', true);
-    // });
-
     $(".single-item").slick({
         dots: true,
         arrows: true,
@@ -85,23 +65,7 @@ $('.main-screen-box .btn-gold, .phone-box, .lang-menu, .main-title, .main-text, 
           ]
     });
 
-    // $(window).resize(function() {
-    //     if ($(window).width() < 990) {
-    //         $('.show-blog').click(function() {
-    //             $('.blog-box:nth-child(n+2)').slideToggle(250);
-    //         });
-    //         $('.show-coment').click(function() {
-    //             $('.tabs__caption div:nth-of-type(n+3)').slideToggle(250);
-    //         });
-    //     }
-    // });
-
 //////////////////////////// Tkach js //////////////////////////////////
-
-
-
-
-
 
 /////////////////////////// Gritsyuk js ////////////////////////////////
 
@@ -130,15 +94,4 @@ var $status = $('.numberInfo');
 });
 
 /////////////////////////// Gritsyuk js ////////////////////////////////
-
-
-
-
-
-
-
-/////////////////////////// Sabadash js ////////////////////////////////
-
-/////////////////////////// Sabadash js ////////////////////////////////
-
 });

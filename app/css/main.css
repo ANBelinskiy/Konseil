@@ -962,8 +962,9 @@ header nav .sub-menu {
       height: 100%; } }
   @media (max-width: 576px) {
     .poster {
-      padding: 15px 30px 20px 15px;
-      width: 90%; } }
+      padding: 10px;
+      width: 95%;
+      margin-top: -80px; } }
   .poster img {
     width: 100%; }
 
@@ -1219,15 +1220,15 @@ header nav .sub-menu {
   @media (max-width: 1280px) {
     .team-container {
       width: 921px;
-      margin: 0 auto;
-      margin-bottom: 150px; } }
+      margin: 0 auto 150px; } }
   @media (max-width: 990px) {
     .team-container {
       grid-template-columns: 1fr 1fr 1fr;
       max-width: 100%; } }
   @media (max-width: 576px) {
     .team-container {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      margin-bottom: 20px; } }
   .team-container .team-item {
     width: 234px; }
     @media (max-width: 1280px) {
@@ -2577,12 +2578,16 @@ footer {
 .about-conseil {
   max-width: 700px;
   position: relative;
-  top: 40px; }
+  color: #00226E;
+  top: 50px; }
   @media (max-width: 990px) {
     .about-conseil {
       top: 0;
       margin-bottom: 40px;
       margin-top: 10px; } }
+  @media (max-width: 576px) {
+    .about-conseil {
+      margin-top: 50px; } }
   .about-conseil .text-xl {
     line-height: 31px;
     font-size: 1.25rem; }
@@ -2610,7 +2615,8 @@ footer {
   bottom: -110px;
   background: #fff;
   padding: 30px 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #00226E; }
   @media (max-width: 990px) {
     .conseil-help {
       bottom: 0;
@@ -2628,6 +2634,7 @@ footer {
     font-weight: bold;
     text-align: center;
     position: relative;
+    color: #00226E;
     z-index: 2; }
     @media (max-width: 990px) {
       .conseil-help .text-xl {
@@ -2637,7 +2644,8 @@ footer {
         display: none; } }
 
 .sole {
-  position: relative; }
+  position: relative;
+  color: #00226E; }
   .sole::after {
     content: url(../img/for-companiens/sota-1.png);
     position: absolute;
@@ -2740,6 +2748,7 @@ footer {
     max-width: 480px; }
 
 .table-info {
+  color: #00226E;
   margin-bottom: 40px; }
   .table-info .table-info-container {
     display: grid;
@@ -2805,6 +2814,7 @@ footer {
   background: #F9F9F9; }
 
 .table-info-box-sm-btn {
+  color: #00226E;
   margin-top: 40px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2834,7 +2844,8 @@ footer {
         display: none; } }
 
 .сop-2 {
-  position: relative; }
+  position: relative;
+  color: #00226E; }
   .сop-2::before {
     display: none; }
   .сop-2::after {
@@ -2848,7 +2859,8 @@ footer {
         display: none; } }
 
 .foreign {
-  position: relative; }
+  position: relative;
+  color: #00226E; }
   .foreign::before {
     content: url(../img/for-companiens/for-companion-best-2.png);
     position: absolute;
@@ -2873,6 +2885,7 @@ footer {
 
 .foreign-container {
   display: grid;
+  color: #00226E;
   grid-template-columns: 1fr 1fr;
   grid-gap: 80px; }
   @media (max-width: 1280px) {
@@ -2897,7 +2910,8 @@ footer {
           display: none; } }
 
 .foreign-box {
-  margin: 10px 0; }
+  margin: 10px 0;
+  color: #00226E; }
   .foreign-box .foreign-box-title {
     font: 700 1.125rem 'Barlow', sans-serif;
     color: #003ABD;
@@ -2972,6 +2986,7 @@ footer {
     z-index: 2; }
 
 .bestseller {
+  color: #00226E;
   position: relative; }
   .bestseller::before {
     content: url(../img/for-companiens/for-companion-best.png);
@@ -3070,6 +3085,7 @@ footer {
       .bestseller-box-xl .bestseller-text-box {
         padding: 20px; } }
   .bestseller-box-xl .demand-box {
+    color: #00226E;
     text-align: center; }
     .bestseller-box-xl .demand-box .demand-title {
       text-decoration: underline;
@@ -3090,6 +3106,7 @@ footer {
   background: url(../img/tax-device/BG.png) no-repeat center;
   background-size: cover;
   height: 90vh;
+  color: #00226E;
   margin-bottom: 40px; }
   @media (max-width: 990px) {
     .advice-screen {
@@ -3117,6 +3134,7 @@ footer {
 
 .main-screen-tax-wrap {
   position: relative;
+  color: #00226E;
   left: 110px;
   top: 100px; }
   @media (max-width: 1280px) {
@@ -3131,6 +3149,9 @@ footer {
       top: 0;
       width: 100%;
       margin-top: 60px; } }
+  @media (max-width: 576px) {
+    .main-screen-tax-wrap {
+      margin-top: 140px; } }
   .main-screen-tax-wrap::after {
     content: url(../img/tax-device/line.svg);
     position: absolute;
@@ -3145,6 +3166,7 @@ footer {
   right: -800px;
   background: #fff;
   padding: 20px;
+  color: #00226E;
   max-width: 540px;
   -webkit-box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
@@ -3171,6 +3193,7 @@ footer {
 
 .main-screen-tax {
   max-width: 430px;
+  color: #00226E;
   position: relative;
   z-index: 2;
   background: #fff; }
@@ -3197,7 +3220,8 @@ footer {
     text-align: center; }
 
 .taxation-tax {
-  position: relative; }
+  position: relative;
+  color: #00226E; }
   .taxation-tax::before {
     content: url(../img/tax-device/tax-img-1.png);
     position: absolute;
@@ -3216,8 +3240,12 @@ footer {
     @media (max-width: 990px) {
       .taxation-tax::after {
         display: none; } }
+  @media (max-width: 557px) {
+    .taxation-tax h2 {
+      margin-top: 50px; } }
 
 .tax-punk {
+  color: #00226E;
   margin-bottom: 10px;
   display: block;
   padding-left: 15px;
@@ -3236,6 +3264,7 @@ footer {
 
 .taxation-tax-wrapper {
   max-width: 500px;
+  color: #00226E;
   margin: 0 auto;
   margin-right: 0; }
   @media (max-width: 990px) {
@@ -3259,6 +3288,7 @@ footer {
         display: none; } }
 
 .about-tax-wrapper {
+  color: #00226E;
   max-width: 560px; }
   @media (max-width: 990px) {
     .about-tax-wrapper {
@@ -3297,6 +3327,7 @@ footer {
     grid-column-end: auto; } }
 
 .cooperate-box {
+  color: #00226E;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3333,6 +3364,7 @@ footer {
 .accounting-screen {
   background: url(../img/acc/BG1.png) no-repeat center;
   background-size: cover;
+  color: #00226E;
   height: 90vh;
   margin-bottom: 40px; }
   @media (max-width: 990px) {
@@ -3368,7 +3400,8 @@ footer {
       top: 0; } }
   .accounting-banner p {
     font-size: 1.7rem;
-    line-height: 28px; }
+    line-height: 28px;
+    color: #00226E; }
     @media (max-width: 990px) {
       .accounting-banner p {
         font-size: 1.4rem; } }
@@ -3377,7 +3410,8 @@ footer {
         display: none; } }
 
 .accounting {
-  position: relative; }
+  position: relative;
+  color: #00226E; }
   .accounting::before {
     content: url(../img/acc/sota-1.png);
     position: absolute;
@@ -4062,3 +4096,7 @@ body::-webkit-scrollbar-track {
 
 button, button:hover, button:focus, button:active, select:hover, select:active, select:focus, select {
   outline: none !important; }
+
+.a2a_kit {
+  position: absolute;
+  z-index: -1; }

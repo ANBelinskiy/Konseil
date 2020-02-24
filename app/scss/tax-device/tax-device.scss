@@ -2,6 +2,7 @@
     background: url(../img/tax-device/BG.png) no-repeat center;
     background-size: cover;
     height: 90vh;
+    color: #00226E;
     margin-bottom: 40px;
     @media (max-width: 990px) {
         margin-bottom: 0;
@@ -18,6 +19,7 @@
 
 .main-screen-tax-wrap {
     position: relative;
+    color: #00226E;
     left: 110px;
     top: 100px;
     @media (max-width: 1280px) {
@@ -31,6 +33,9 @@
         top: 0;
         width: 100%;
         margin-top: 60px;
+    }
+    @media (max-width: 576px) {
+        margin-top: 140px;
     }
     &::after {
         content: url(../img/tax-device/line.svg);
@@ -49,8 +54,9 @@
     right: -800px;
     background: #fff;
     padding: 20px;
+    color: #00226E;
     max-width: 540px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 12px rgba(0,0,0,.25);
     border-radius: 2px;
     bottom: 0;
     z-index: 2;
@@ -75,6 +81,7 @@
 
 .main-screen-tax {
     max-width: 430px;
+    color: #00226E;
     position: relative;
     z-index: 2;
     background: #fff;
@@ -105,6 +112,7 @@
 
 .taxation-tax {
     position: relative;
+    color: #00226E;
     &::before {
         content: url(../img/tax-device/tax-img-1.png);
         position: absolute;
@@ -125,9 +133,15 @@
             display: none;
         }
     }
+    h2 {
+        @media (max-width: 557px) {
+            margin-top: 50px;
+        }
+    }
 }
 
 .tax-punk {
+    color: #00226E;
     margin-bottom: 10px;
     display: block;
     padding-left: 15px;
@@ -147,6 +161,7 @@
 
 .taxation-tax-wrapper {
     max-width: 500px;
+     color: #00226E;
     margin: 0 auto;
     margin-right: 0;
     @media (max-width: 990px) {
@@ -174,6 +189,7 @@
 }
 
 .about-tax-wrapper {
+     color: #00226E;
     max-width: 560px;
     @media (max-width: 990px) {
         margin: 0 auto;
@@ -218,6 +234,7 @@
 }
 
 .cooperate-box {
+     color: #00226E;
     display: flex;
     flex-direction: column;
     align-items: center;
