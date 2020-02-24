@@ -69,7 +69,7 @@ $('.main-screen-box .btn-gold, .phone-box, .lang-menu, .main-title, .main-text, 
 
 /////////////////////////// Gritsyuk js ////////////////////////////////
 
-var $status = $('.numberInfo');
+ var $status = $('.numberInfo');
     var $slickElement = $('.newspaper-slider');
 
     $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -91,7 +91,32 @@ var $status = $('.numberInfo');
 
     $slickElement.slick({
         dots: true
-});
+    });
+
+    var $statusNumbers = $('.numberInfoFeedback');
+    var $slickElement = $('.feedbacks-slider');
+
+    $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var k = (currentSlide ? currentSlide : 0) + 1;
+        $statusNumbers.text(k + '/' + slick.slideCount);
+    });
+
+    $slickElement.slick({
+        dots: true
+    });
+
+    /*Open program coaching*/
+    $('.button-more').click(function () {
+        $('.button-more').hide();
+        $('.coaching-read-more').addClass('active');
+
+    });
+    /*Close program coaching*/
+    $('.button-less').click(function () {
+        $('.button-more').show();
+        $('.coaching-read-more').removeClass('active');
+
+    });
 
 /////////////////////////// Gritsyuk js ////////////////////////////////
 });

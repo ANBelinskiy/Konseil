@@ -1,0 +1,783 @@
+.main-coaching {
+    max-width: 392px;
+
+    & .tax-punk {
+        color: #00226E;
+        font: 400 1.12rem 'Barlow', sans-serif;
+    }
+}
+
+.main-coaching-text {
+    color: #00226E;
+    font: 400 1.12rem 'Barlow', sans-serif;
+}
+
+.excellence {
+    color: #00226E;
+    font: 400 1.12rem 'Barlow', sans-serif;
+    padding-bottom: 52px;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+
+        & .help-block {
+            /*max-width: 488px;*/
+
+            & .excellence-img {
+                position: relative;
+                width: 100%;
+                left: -100px;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & p {
+                margin-top: 48px;
+                width: 588px;
+            }
+        }
+
+        .needed-block {
+            max-width: 500px;
+
+            & .needed-block-caption {
+                font-weight: 600;
+                padding-left: 17px;
+            }
+
+            & ul {
+                & li {
+                    position: relative;
+                    padding-left: 17px;
+                    margin-bottom: 13px;
+                }
+
+                & li:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    height: 8px;
+                    width: 8px;
+                    display: block;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #FFC200 0%, #FF785E 100%);
+                }
+            }
+        }
+    }
+}
+
+.coach-text {
+    color: #00226E;
+    font: 500 1.12rem 'Barlow', sans-serif;
+}
+
+.consultation-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .consultation-text {
+        width: 570px;
+        color: #00226E;
+        font: 400 1.12rem 'Barlow', sans-serif;
+
+
+    }
+
+    & .consultant-img {
+        & img {
+            width: 100%;
+        }
+    }
+}
+
+.read-more {
+    display: block;
+    text-align: right;
+    color: #00226E;
+    font: 600 1.12rem 'Barlow', sans-serif;
+    cursor: pointer;
+}
+
+
+
+.program-wrap {
+
+    display: flex;
+
+    & .program-wrap-item {
+        box-sizing: border-box;
+        max-width: 435px;
+        height: 100%;
+        box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+        position: relative;
+        background-color: #ffffff;
+        z-index: 777;
+
+
+        & .program-wrap-item-box {
+            padding: 30px 27px 60px 25px;
+
+            & .screen-tax-title {
+                text-align: center;
+                color: #00226E;
+                font: 400 1.5rem 'Barlow', sans-serif;
+                margin-bottom: 29px;
+            }
+
+            & .program-ask {
+                text-align: center;
+                color: #0B63F6;
+                font: 400 1.5rem 'Barlow', sans-serif;
+                margin-bottom: 25px;
+            }
+
+            & .program-item {
+                color: #00226E;
+                font: 400 1.12rem 'Barlow', sans-serif;
+                margin-bottom: 16px;
+                position: relative;
+                padding-left: 17px;
+            }
+
+            & .program-item:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 8px;
+                height: 8px;
+                width: 8px;
+                display: block;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #FFC200 0%, #FF785E 100%);
+            }
+        }
+
+        & .btn-gold {
+            box-sizing: border-box;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    /*.program-wrap-item::after {
+        content: url(../img/tax-device/line.svg);
+        position: absolute;
+        right: -300px;
+        top: 75px;
+        z-index: -2;
+    }*/
+
+    & .program-one-description {
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        padding: 17px 31px 24px 38px;
+        max-width: 545px;
+        max-height: 117px;
+        margin-top: 35px;
+        margin-left: 61px;
+        z-index: 700;
+
+        & p {
+            color: #00226E;
+            font: 400 1.12rem 'Barlow', sans-serif;
+
+        }
+    }
+}
+
+
+
+.info-program {
+    width: 430px;
+    box-sizing: border-box;
+
+    & .info-program-img {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+        width: 395px;
+        height: 399px;
+        padding: 21px 19px 21px 19px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .read-program {
+        padding-left: 30px;
+    }
+}
+
+.info-program1 {
+    margin-top: 55px;
+    margin-left: 116px;
+}
+
+.program-one,
+.program-two,
+.program-three {
+    display: flex;
+    padding-left: 80px;
+    margin-bottom: 66px;
+}
+
+.program-two {
+    & .info-program2 {
+        margin-top: 15px;
+    }
+
+    & .program-wrapper {
+        margin-left: 199px;
+    }
+}
+
+.program-three {
+    .info-program3 {
+        margin-top: 90px;
+        margin-left: 168px;
+    }
+}
+
+
+.program-wrapper {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+    max-width: 375px;
+    height: 100%;
+
+    & .program-description {
+        padding: 41px 19px 30px 36px;
+
+        & .program-description-title {
+            text-align: center;
+            color: #00226E;
+            font: 600 1.5rem 'Barlow', sans-serif;
+            margin-bottom: 18px;
+        }
+
+        & .program-description-text {
+            color: #00226E;
+            font: 400 1.12rem 'Barlow', sans-serif;
+        }
+    }
+
+    .btn-gold {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+
+.coach-top {
+    display: flex;
+
+    align-items: center;
+    color: #00226E;
+
+    & .coach-img {
+        max-width: 450px;
+        max-height: 410px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    & .coach-info {
+        margin-left: 140px;
+
+        & .coach-quote {
+            max-width: 460px;
+
+            & .coach-quote-text {
+                font: 600 1.12rem 'Barlow', sans-serif;
+            }
+
+            & .coach-name {
+                font: 600 1.12rem 'Barlow', sans-serif;
+                font-style: italic;
+                text-align: right;
+            }
+
+            & .coach-post {
+                font: 400 1.12rem 'Barlow', sans-serif;
+                font-style: italic;
+                text-align: right;
+            }
+        }
+
+        & ul {
+            max-width: 520px;
+
+            & li {
+                color: #00226E;
+                font: 400 1.12rem 'Barlow', sans-serif;
+                margin-bottom: 15px;
+                padding-left: 18px;
+                position: relative;
+            }
+
+            & li:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 8px;
+                height: 8px;
+                width: 8px;
+                display: block;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #FFC200 0%, #FF785E 100%);
+            }
+        }
+    }
+}
+
+.coach-bottom {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    color: #00226E;
+
+    .achievements-text {
+        max-width: 605px;
+
+        & .achievements-title {
+            font: 600 1.12rem 'Barlow', sans-serif;
+        }
+
+        & ul li {
+            font: 400 1.12rem 'Barlow', sans-serif;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+
+            & span {
+                font-weight: 600;
+            }
+        }
+
+        & ul li:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            height: 21px;
+            width: 21px;
+            display: block;
+            background: url(../img/coaching/crown.svg) no-repeat;
+        }
+    }
+
+    & .achievements-img {
+        margin-right: -100px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+}
+
+.feedbacks {
+    padding-top: 27px;
+
+    .btn-gold {
+        display: block;
+        text-align: center;
+        width: 263px;
+        margin: 0 auto;
+        margin-top: -15px;
+        font: 600 1.12rem 'Barlow', sans-serif;
+    }
+}
+
+.feedbacks-slider-block {
+    width: 532px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    & .feedbacks-slider {
+        position: relative;
+        width: 532px;
+        height: 532px;
+
+        & .feedback-slide {
+
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        & .slick-prev {
+            position: absolute;
+            top: 88%;
+            z-index: 849;
+            left: 16px;
+        }
+
+        & .slick-prev:before {
+            content: url(../img/testimonials/left.svg);
+        }
+
+        & .slick-next {
+            position: absolute;
+            top: 88%;
+            z-index: 829;
+            left: 42px;
+        }
+
+        & .slick-next:before {
+            content: url(../img/testimonials/right.svg);
+        }
+
+        & .slick-dots li button:before {
+            content: '';
+        }
+    }
+
+    & .numberInfoFeedback {
+        color: #003ABD;
+        font: 400 1.12rem 'Barlow', sans-serif;
+        position: absolute;
+        top: 86%;
+        left: 80px;
+    }
+
+    & .feedback-link {
+        position: absolute;
+        font: 600 1.12rem 'Barlow', sans-serif;
+        color: #0B63F6;
+        top: 86%;
+        right: 30px;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            margin-left: 10px;
+        }
+    }
+}
+
+.coaching-contact {
+    padding-top: 55px;
+    padding-bottom: 57px;
+
+    & .container {
+        display: flex;
+
+        & .contacts-form {
+            margin-left: 0;
+        }
+
+    }
+}
+
+.contact-email-img {
+    margin-left: -100px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.contact-email-info {
+    box-sizing: padding-box;
+    max-width: 400px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    color: #00226E;
+    font: 400 1.12rem 'Barlow', sans-serif;
+    padding: 14px 30px 11px 30px;
+    margin-top: 68px;
+    margin-left: 40px;
+
+    & .contact-email-link {
+        color: #00226E;
+        font: 600 1.12rem 'Barlow', sans-serif;
+        display: block;
+        margin-top: 6px;
+        margin-bottom: 11px;
+    }
+
+    & .contact-fb-link {
+        color: #00226E;
+        font: 400 1.12rem 'Barlow', sans-serif;
+        display: flex;
+        align-items: center;
+
+        & img {
+            margin-left: 10px;
+        }
+    }
+}
+
+/*POPUP ONE*/
+.coaching-read-more {
+    position: relative;
+    display: none;
+    padding-bottom: 70px;
+
+    & .title-xl {
+        margin-bottom: 19px;
+    }
+}
+
+.coaching-read-more.active {
+    display: block;
+}
+
+.coaching-read-text {
+    display: flex;
+    justify-content: space-between;
+    color: #00226E;
+}
+
+.coaching-left {
+    max-width: 610px;
+
+    & p {
+        max-width: 590px;
+        font: 400 1.12rem 'Barlow', sans-serif;
+    }
+}
+
+.coaching-right {
+    max-width: 497px;
+}
+
+.coaching-right-quote,
+.coaching-right-name,
+.coaching-right-edition {
+    font: 600 1.12rem 'Barlow', sans-serif;
+}
+
+.coaching-right-name,
+.coaching-right-edition {
+    text-align: right;
+}
+
+.coaching-right-name {
+    margin-top: 10px;
+}
+
+.coaching-right-edition {
+    margin-bottom: 64px;
+}
+
+.coaching-points {
+
+
+    & .coaching-points-title {
+        font: 600 1.12rem 'Barlow', sans-serif;
+        padding-left: 19px;
+    }
+
+    & ul li {
+        font: 400 1.12rem 'Barlow', sans-serif;
+        padding-left: 19px;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    & ul li:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        height: 8px;
+        width: 8px;
+        display: block;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #FFC200 0%, #FF785E 100%);
+    }
+}
+
+.button-less {
+    position: absolute;
+    bottom: 35px;
+    right: 10px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/*POPUP TWO*/
+.coaching-request {
+    & ul {
+        margin-left: 24px;
+        margin-bottom: 50px;
+        max-width: 480px;
+
+        li {
+            font: 400 1.12rem 'Barlow', sans-serif;
+            padding-left: 32px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            height: 17px;
+            width: 17px;
+            display: block;
+            background: url(../img/coaching/like.svg) no-repeat;
+        }
+    }
+}
+
+.request-email {
+    font: 400 1.12rem 'Barlow', sans-serif;
+    margin-bottom: 40px;
+
+    & a {
+        font: 600 1.12rem 'Barlow', sans-serif;
+        color: #00226E;
+    }
+}
+
+.changes {
+    margin-left: -140px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 588px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+
+
+    & p {
+        margin-bottom: 15px;
+        font: 600 1.12rem 'Barlow', sans-serif;
+    }
+
+    & ul li {
+        font: 400 1.12rem 'Barlow', sans-serif;
+        margin-bottom: 10px;
+    }
+}
+
+.changes-before {
+    border-right: 1px solid #C4C4C4;
+
+}
+
+.changes-before,
+.changes-after {
+    padding: 13px 8px 13px 8px;
+}
+
+.request-points {
+    max-width: 480px;
+
+    & .coaching-points-title {
+        font: 600 1.12rem 'Barlow', sans-serif;
+        margin-bottom: 32px;
+        margin-top: 50px;
+    }
+
+    & ul li {
+        position: relative;
+        font: 400 1.12rem 'Barlow', sans-serif;
+        padding-left: 32px;
+        margin-bottom: 15px;
+    }
+
+    & ul li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        height: 17px;
+        width: 17px;
+        display: block;
+        background: url(../img/coaching/cross.svg) no-repeat;
+    }
+}
+
+.coaching-read-more {
+    & .btn-gold {
+        display: block;
+        text-align: center;
+        width: 265px;
+        margin: 0 auto;
+        margin-top: 57px;
+    }
+}
+
+/*POPUP THREE*/
+.coaching-dream {
+    & ul li {
+        position: relative;
+        padding-left: 32px;
+    }
+
+    & ul li::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        height: 17px;
+        width: 17px;
+        display: block;
+        background: url(../img/coaching/ask.svg) no-repeat;
+    }
+}
+
+.title-dream-life {
+    color: #0B63F6;
+}
+
+.dream-life-text {
+    margin-bottom: 38px;
+}
+
+.changes {
+    & ol {
+        padding-left: 20px;
+    }
+}
+
+/*POPUP FOUR*/
+.changes-jump {
+    margin-left: 0;
+    margin-bottom: 37px;
+}
+
+.coaching-jump {
+    max-width: 395px;
+}
+
+.coaching-jump2 {
+    margin-top: 80px;
+
+    & ul li {
+        position: relative;
+    }
+
+    & ul li::after {
+        content: '';
+        position: absolute;
+        left: -15px;
+        top: 4px;
+        height: 17px;
+        width: 17px;
+        display: block;
+        background: url(../img/coaching/cross.svg) no-repeat;
+    }
+}
