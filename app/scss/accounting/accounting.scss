@@ -17,6 +17,11 @@
     }
 }
 
+.none-sote {
+    &::before {
+        display: none;
+    }
+}
 
 .accounting-banner {
     max-width: 630px;   

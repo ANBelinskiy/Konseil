@@ -62,7 +62,7 @@
                         <h1 class="main-title">Advensys Conseil</h1>
                         <p class="main-subtitle">is an accounting company</p>
                         <p class="main-text">that also provides company and fund formation, <br> tax optimization and coaching service</p>
-                        <a href="#" class="btn-gold">Contact us</a>
+                        <a href="#" class="btn-gold popup-with-form">Contact us</a>
                     </div>
                 </div>
             </section>
@@ -549,8 +549,46 @@
             </div>
         </footer>
     </div>
+<div id="call-contact" class="mfp-hide white-popup-block">
+            <p class="modal-title">
+                Apply for<br>
+                <strong>Free Seminar</strong>
+            </p>
+            <form method="POST" id="modal-home" class="modal-form">
+                <input type="hidden" value="home-page" name="page">
+                <input type="text" name="nameUser" class="input-simple" minlength="1" maxlength="20" placeholder="Name*" required>
+                <input type="text" name="surnameUser" class="input-simple" minlength="1" maxlength="20" placeholder="Surname*" required>
+                <input type="text" name="phoneUser" id="phone" class="input-simple" maxlength="20" placeholder="Phone number*" required>
+                <input type="email" name="emailUser" class="input-simple" placeholder="E-mail*" required>
+                <label for="mess" class="mess-label">Message</label>
+                <textarea name="messUser" minlength="10" maxlength="250" class="mess"></textarea>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" required>
+                    <label class="label">
+                    </label>
+                    <span class="form-checkbox-text">
+                        I'm not a robot
+                    </span>
+                </div>
+                <div class="button-wrap">
+                    <button type="submit" class="btn-gold">Apply now</button>
+                </div>
+            </form>
+        </div>
+
+        <a href="#thank" class="popup-with-form call-thank"></a>
+
+        <div id="thank" class="mfp-hide white-popup-block">
+            <p class="modal-title">
+                Thank you!
+            </p>
+        </div>
+
+
     <script src="js/libs/jquery-3.4.1.min.js"></script>
     <script src="js/libs/slick.min.js"></script>
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
+    <script src="js/libs/jquery.maskedinput.min.js"></script> 
     <script src="js/common.js"></script>
 
     <script>

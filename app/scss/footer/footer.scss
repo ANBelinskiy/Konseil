@@ -1,6 +1,10 @@
 footer {
     background: url(../img/footer/footer-bg.png) no-repeat center;
     background-size: cover;
+    
+    @media (max-width: 768px) {
+        background: #0B63F6;
+    }
 }
 
 .footer-container {

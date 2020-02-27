@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(../css/slick.css);
 @import url(../css/slick-theme.css);
+@import url(../css/magnific-popup.css);
 html,
 body {
   font-family: 'Barlow', sans-serif;
@@ -399,10 +400,20 @@ header nav .sub-menu {
       margin: 0;
       padding-bottom: 10px; } }
 
+@media (max-width: 425px) {
+  .logo-box {
+    max-width: 60%;
+    width: 100%; } }
+
 .logo-box img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  width: 100%; }
   @media (max-width: 576px) {
+    .logo-box img {
+      height: 30px;
+      width: 70%; } }
+  @media (max-width: 425px) {
     .logo-box img {
       height: 30px; } }
   @media (max-width: 380px) {
@@ -2316,6 +2327,9 @@ header nav .sub-menu {
 footer {
   background: url(../img/footer/footer-bg.png) no-repeat center;
   background-size: cover; }
+  @media (max-width: 768px) {
+    footer {
+      background: #0B63F6; } }
 
 .footer-container {
   display: grid;
@@ -2545,6 +2559,143 @@ footer {
     .btn-gold {
       font: 1rem 'Barlow', sans-serif;
       padding: 12px 25px; } }
+
+.mfp-bg {
+  background: #324e8b; }
+
+.white-popup-block {
+  position: relative;
+  background: #fff;
+  max-width: 425px;
+  margin: 0 auto;
+  padding: 25px 60px; }
+  @media (max-width: 990px) {
+    .white-popup-block {
+      padding: 25px; } }
+  .white-popup-block .modal-title {
+    text-align: center;
+    padding-top: 40px;
+    font: normal 2rem/40px 'Barlow', sans-serif;
+    color: #00226E;
+    padding-bottom: 25px;
+    position: relative;
+    margin-bottom: 25px; }
+    @media (max-width: 990px) {
+      .white-popup-block .modal-title {
+        padding-top: 0;
+        font: normal 1.5rem/30px 'Barlow', sans-serif;
+        margin-bottom: 10px;
+        padding-bottom: 0; } }
+    .white-popup-block .modal-title::after {
+      content: '';
+      width: 100%;
+      border: 3px dashed #00226E;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: 0; }
+      @media (max-width: 990px) {
+        .white-popup-block .modal-title::after {
+          display: none; } }
+
+.modal-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .modal-form input, .modal-form textarea {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    outline: none;
+    color: #000;
+    font: normal 1rem 'Barlow', sans-serif; }
+  .modal-form .mess-label {
+    font: normal .9rem 'Barlow', sans-serif;
+    color: rgba(0, 34, 110, 0.4);
+    margin-bottom: 5px; }
+  .modal-form textarea {
+    border: 1px solid #003ABD;
+    padding: 15px;
+    height: 115px;
+    resize: none;
+    margin-bottom: 30px; }
+    @media (max-width: 990px) {
+      .modal-form textarea {
+        margin-bottom: 20px; } }
+  .modal-form .input-simple {
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 0;
+    border-bottom: 1.25px solid #003ABD; }
+    @media (max-width: 990px) {
+      .modal-form .input-simple {
+        margin-bottom: 15px; } }
+    .modal-form .input-simple:focus {
+      border-bottom: 1.25px solid #ffc201; }
+  .modal-form .checkbox-wrap {
+    margin-bottom: 30px; }
+    @media (max-width: 990px) {
+      .modal-form .checkbox-wrap {
+        margin-bottom: 20px; } }
+  .modal-form .button-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .modal-form .button-wrap button {
+      outline: none;
+      border: none; }
+
+input::-webkit-input-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+input:-moz-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+input::-moz-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+input:-ms-input-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+textarea::-webkit-input-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+textarea:-moz-input-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+textarea::-moz-input-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+textarea:-ms-input-placeholder {
+  font: normal .9rem 'Barlow', sans-serif;
+  color: rgba(0, 34, 110, 0.4); }
+
+.mfp-close-btn-in .mfp-close {
+  color: #00226e;
+  opacity: 1; }
 
 .for-companiens-screen {
   background: url(../img/about/about-bg.png) no-repeat center center;
@@ -3302,6 +3453,9 @@ footer {
     position: absolute;
     left: 0;
     bottom: -300px; }
+    @media (max-width: 768px) {
+      .cooperate::before {
+        display: none; } }
 
 .cooperate-wrapper {
   display: grid;
@@ -3390,6 +3544,9 @@ footer {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
+.none-sote::before {
+  display: none; }
 
 .accounting-banner {
   max-width: 630px;
@@ -3595,14 +3752,7 @@ footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  /*.program-wrap-item::after {
-        content: url(../img/tax-device/line.svg);
-        position: absolute;
-        right: -300px;
-        top: 75px;
-        z-index: -2;
-    }*/ }
+  display: flex; }
   .program-wrap .program-wrap-item {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -3822,6 +3972,9 @@ footer {
     margin: 0 auto;
     margin-top: -15px;
     font: 600 1.12rem 'Barlow', sans-serif; }
+    @media (max-width: 576px) {
+      .feedbacks .btn-gold {
+        margin-top: 15px; } }
 
 .feedbacks-slider-block {
   width: 532px;
@@ -4087,8 +4240,8 @@ footer {
   position: absolute;
   left: 0;
   top: 4px;
-  height: 17px;
-  width: 17px;
+  height: 20px;
+  width: 20px;
   display: block;
   background: url(../img/coaching/ask.svg) no-repeat; }
 
@@ -4118,10 +4271,254 @@ footer {
     position: absolute;
     left: -15px;
     top: 4px;
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
     display: block;
     background: url(../img/coaching/cross.svg) no-repeat; }
+
+@media (max-width: 1280px) {
+  .consultation-block .consultation-text {
+    margin-bottom: 40px; }
+  .program-one,
+  .program-two,
+  .program-three {
+    padding-left: 0; }
+  .program-two .program-wrapper {
+    margin-left: 90px; }
+  .program-three .info-program3 {
+    margin-left: 90px; }
+  .coach-top .coach-info {
+    margin-left: 60px; } }
+
+@media (max-width: 990px) {
+  .excellence .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .excellence .container .help-block {
+      /*max-width: 488px;*/ }
+      .excellence .container .help-block .excellence-img {
+        left: 0; }
+      .excellence .container .help-block p {
+        margin: 0 auto;
+        margin-top: 48px;
+        width: 80%; }
+    .excellence .container .needed-block {
+      margin: 0 auto;
+      width: 80%;
+      margin-top: 40px; }
+  .consultation-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .program-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    .program-wrap .program-wrap-item {
+      margin: 0 auto; }
+    .program-wrap .program-one-description {
+      margin: 0 auto;
+      margin-top: 35px; }
+  .info-program {
+    margin: 0 auto; }
+  .info-program1 {
+    margin-top: 55px; }
+  .program-two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .program-two .info-program2 {
+      margin-top: 40px; }
+    .program-two .program-wrapper {
+      margin: 0 auto;
+      margin-top: 40px; }
+  .program-three {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .program-three .program-wrapper {
+      margin: 0 auto; }
+    .program-three .info-program3 {
+      margin: 0 auto;
+      margin-top: 40px; }
+  .coach-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .coach-top .coach-info {
+      width: 80%;
+      margin: 0 auto; }
+  .coach-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .coach-bottom .achievements-text {
+      width: 80%;
+      margin: 0 auto; }
+    .coach-bottom .achievements-img {
+      margin-right: 0; }
+  .coaching-contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .coaching-contact .container .contacts-form {
+      margin: 0 auto;
+      padding: 20px 25px; }
+  .contact-email-img {
+    margin-left: 0;
+    margin-top: 30px; }
+  .contact-email-info {
+    margin: 0 auto;
+    margin-top: 68px; }
+  .coaching-read-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 86%;
+    margin: 0 auto; }
+  .changes {
+    margin-left: 0;
+    width: 100%; } }
+
+@media (max-width: 576px) {
+  .excellence {
+    font: 400 0.95rem 'Barlow', sans-serif; }
+    .excellence .container .help-block p {
+      width: 90%; }
+    .excellence .container .needed-block {
+      width: 90%; }
+  .coach-top .coach-info {
+    width: 90%; }
+  .coach-bottom .achievements-text {
+    width: 90%; }
+  .consultation-block .consultation-text {
+    width: 90%;
+    font: 400 0.95rem 'Barlow', sans-serif; }
+  .program-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .program-wrap .program-wrap-item {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      max-width: 435px;
+      height: 100%;
+      -webkit-box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+              box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+      position: relative;
+      background-color: #ffffff;
+      z-index: 777; }
+      .program-wrap .program-wrap-item .program-wrap-item-box {
+        padding: 30px 27px 20px 25px; }
+        .program-wrap .program-wrap-item .program-wrap-item-box .screen-tax-title {
+          font: 400 1rem 'Barlow', sans-serif; }
+        .program-wrap .program-wrap-item .program-wrap-item-box .program-ask {
+          font: 400 1rem 'Barlow', sans-serif; }
+        .program-wrap .program-wrap-item .program-wrap-item-box .program-item {
+          font: 400 0.95rem 'Barlow', sans-serif; }
+    .program-wrap .program-one-description {
+      max-width: 100%;
+      padding: 17px 10px 20px 15px; }
+  .info-program {
+    width: 340px; }
+    .info-program .info-program-img {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto; }
+  .program-two .program-wrapper {
+    margin-left: 0; }
+  .program-wrapper .program-description {
+    padding: 30px 14px 20px 26px; }
+    .program-wrapper .program-description .program-description-title {
+      font: 600 1rem 'Barlow', sans-serif; }
+    .program-wrapper .program-description .program-description-text {
+      font: 400 0.95rem 'Barlow', sans-serif; }
+  .feedbacks-slider-block {
+    width: 340px;
+    height: 100%;
+    margin: 0 auto; }
+    .feedbacks-slider-block .feedbacks-slider {
+      position: relative;
+      width: 340px;
+      height: 340px; }
+      .feedbacks-slider-block .feedbacks-slider .slick-prev {
+        position: absolute;
+        top: 88%;
+        z-index: 849;
+        left: 16px; }
+      .feedbacks-slider-block .feedbacks-slider .slick-next {
+        position: absolute;
+        top: 88%;
+        z-index: 829;
+        left: 42px; }
+    .feedbacks-slider-block .numberInfoFeedback {
+      font: 400 0.95rem 'Barlow', sans-serif;
+      top: 85%;
+      left: 80px; }
+    .feedbacks-slider-block .feedback-link {
+      font: 600 0.95rem 'Barlow', sans-serif;
+      top: 90%;
+      right: 20px; }
+      .feedbacks-slider-block .feedback-link img {
+        margin-left: 10px; }
+  .coaching-read-text {
+    width: 94%; }
+  .coaching-left {
+    max-width: 100%; }
+    .coaching-left p {
+      max-width: 100%;
+      font: 400 0.95rem 'Barlow', sans-serif; }
+  .coaching-right {
+    max-width: 100%; }
+  .coaching-right-quote,
+  .coaching-right-name,
+  .coaching-right-edition {
+    font: 600 0.95rem 'Barlow', sans-serif; }
+  .coaching-points .coaching-points-title {
+    font: 600 0.95rem 'Barlow', sans-serif; }
+  .coaching-points ul li {
+    font: 400 0.95rem 'Barlow', sans-serif; }
+  .coaching-request ul {
+    max-width: 100%; }
+    .coaching-request ul li {
+      font: 400 0.95rem 'Barlow', sans-serif; }
+  .request-email {
+    font: 400 0.95rem 'Barlow', sans-serif; }
+    .request-email a {
+      font: 600 0.95rem 'Barlow', sans-serif; }
+  .changes p {
+    font: 600 0.95rem 'Barlow', sans-serif; }
+  .changes ul li {
+    font: 400 0.95rem 'Barlow', sans-serif; }
+  .request-points {
+    max-width: 100%; }
+    .request-points .coaching-points-title {
+      font: 600 0.95rem 'Barlow', sans-serif; }
+    .request-points ul li {
+      font: 400 0.95rem 'Barlow', sans-serif; }
+  .button-less {
+    bottom: 15px; } }
 
 .contact-main {
   background: url(../img/contact-services/contact-bg2.png) no-repeat center center;

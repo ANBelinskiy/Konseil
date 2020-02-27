@@ -55,7 +55,11 @@ gulp.task('prebuild', async function() {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('app/css'));
 
-    var minJs = gulp.src('app/js/common.js')
+    var minJs = gulp.src([
+            'app/js/libs/jquery-3.4.1.min.js',
+            'app/js/libs/slick.min.js',
+            'app/js/common.js'
+        ])
         .pipe(concat('common.min.js'))
         .pipe(uglify()) 
         .pipe(gulp.dest('dist/js'));
