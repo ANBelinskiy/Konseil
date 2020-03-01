@@ -100,7 +100,7 @@ header nav a[aria-current="page"] {
 
 nav > ul > li {
     position: relative;
-     opacity: 0;
+    opacity: 0;
 
             &:nth-child(1).anim-right {
                 opacity: 1;
@@ -156,6 +156,7 @@ nav > ul > li:hover .sub-menu {
 }
 
 header nav ul.sub-menu a {
+    letter-spacing: 1px;
     @media (max-width: 990px) { 
         font: 300 .95rem 'Barlow', sans-serif;
         margin-bottom: 10px;
@@ -168,7 +169,7 @@ header nav ul.sub-menu a[aria-current="page"] {
 
 header nav .sub-menu {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 100%;
   padding: 10px;
   z-index: 10;

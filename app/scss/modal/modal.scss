@@ -7,18 +7,18 @@
     background: #fff;
     max-width: 425px;
     margin: 0 auto;
-    padding: 25px 60px;
+    padding: 15px 40px;
     @media (max-width: 990px) {
-        padding: 25px;
+        padding: 20px;
     }
     .modal-title {
         text-align: center;
         padding-top: 40px;
         font: normal 2rem/40px 'Barlow', sans-serif;
         color: #00226E;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         @media (max-width: 990px) {
             padding-top: 0;
             font: normal 1.5rem/30px 'Barlow', sans-serif;
@@ -53,13 +53,13 @@
     }
     .mess-label {
         font: normal .9rem 'Barlow', sans-serif;
-        color: rgba(0, 34, 110, 0.4);
+        color: rgba(0,34,110,.4);
         margin-bottom: 5px;
     }
     textarea {
         border: 1px solid #003ABD;
         padding: 15px;
-        height: 115px;
+        height: 100px;
         resize: none;
         margin-bottom: 30px;
         @media (max-width: 990px) {
@@ -67,19 +67,19 @@
         }
     }
     .input-simple {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
         border: none;
-        padding: 10px 0;
+        padding: 5px 0;
         border-bottom: 1.25px solid #003ABD;
         @media (max-width: 990px) {
-           margin-bottom: 15px;
+           margin-bottom: 8px;
         }
         &:focus {
             border-bottom: 1.25px solid #ffc201; 
         }
     }
     .checkbox-wrap {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         @media (max-width: 990px) {
             margin-bottom: 20px;
         }

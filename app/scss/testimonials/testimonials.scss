@@ -1,65 +1,3 @@
-// .tabs__content {
-//     display: none; 
-// }
-// .tabs__content.active {
-//     max-width: 900px;
-//     margin: 0 auto;
-//     margin-bottom: 60px;
-//     display: grid;
-//     grid-template-columns: 2fr 3fr;
-//     grid-gap: 30px;
-//     padding: 20px 0;
-//     position: relative;
-//     @media (max-width: 990px) {
-//         padding: 10px 0;
-//         margin-bottom: 30px;
-//         grid-template-columns: 1fr 1fr;
-//     }
-//     @media (max-width: 576px) {
-//         grid-template-columns: 1fr;
-//         grid-gap: 20px;
-//     }
-//     &::before {
-//         content: url(../img/testimonials/long-line.svg);
-//         display: block;
-//         position: absolute;
-//         bottom: -30px;
-//         z-index: 2;
-//         left: -30px;
-//         @media (max-width: 990px) {
-//             display: none;
-//         }
-//     }
-//     .tabs-info {
-//         max-width: 280px;
-//         @media (max-width: 576px) {
-//            max-width: 100%;
-//         }
-//     }
-//     .vido-box {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         cursor: pointer;
-//         position: relative;
-//         video {
-//             height: 100%;
-//             width: 100%;
-//         }
-//     }
-// }
-
-// .play-icon {
-//     &::before {
-//         content: url(../img/testimonials/youtube-xl.svg);
-//         display: block;
-//         position: absolute;
-//         right: 40px;
-//         bottom: 20px;
-//         z-index: 2;
-//     }
-// }
-
 .testimonials {
     br{
         @media (max-width: 576px) {
@@ -67,63 +5,6 @@
         }
     }
 }
-
-// .tabs__caption {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-//     grid-gap: 20px;
-//     @media (max-width: 1100px) {
-//         grid-gap: 15px;
-//     }
-//     @media (max-width: 990px) {
-//         grid-template-columns: 1fr 1fr 1fr;
-//         justify-items: center;
-//     }
-//     @media (max-width: 768px) {
-//         grid-template-columns: 1fr 1fr;
-//     }
-//     div {
-//         cursor: pointer;
-//         max-width: 170px;
-//         padding: 15px 10px;
-//         position: relative;
-//         &::before {
-//             content: url(../img/testimonials/youtube.svg);
-//             display: block;
-//             position: absolute;
-//             right: 20px;
-//             top: 90px;
-//             @media (max-width: 576px) {
-//                 top: 80px;
-//             }
-//             @media (max-width: 360px) {
-//                 top: 72px;
-//             }
-//             @media (max-width: 320px) {
-//                 top: 60px;
-//             }
-//         }
-//         .tabs-img {
-//             max-width: 100%;
-//             height: 100px;
-//             margin-bottom: 5px;
-//             @media (max-width: 990px) {
-//                 height: auto;
-//             }
-//         }
-//         p {
-//             color: #003ABD;
-//             font: 500 .87rem 'Barlow', sans-serif;
-//         }
-//     }
-//     .active {
-//         background: #003ABD;
-//         border-radius: 2px;
-//         p {
-//             color: #fff;
-//         }
-//     }
-// }
 
 .slider-box-tls {
     display: flex;
@@ -156,7 +37,7 @@
         z-index: 0;
         max-width: 190px;
         width: 100%;
-        height: 157px;
+        height: 162px;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;

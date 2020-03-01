@@ -251,17 +251,19 @@ nav > ul > li:hover .sub-menu {
   nav > ul > li:hover .sub-menu a:after {
     display: none; }
 
-@media (max-width: 990px) {
-  header nav ul.sub-menu a {
-    font: 300 .95rem 'Barlow', sans-serif;
-    margin-bottom: 10px; } }
+header nav ul.sub-menu a {
+  letter-spacing: 1px; }
+  @media (max-width: 990px) {
+    header nav ul.sub-menu a {
+      font: 300 .95rem 'Barlow', sans-serif;
+      margin-bottom: 10px; } }
 
 header nav ul.sub-menu a[aria-current="page"] {
   color: #feb60f; }
 
 header nav .sub-menu {
   position: absolute;
-  top: 5px;
+  top: 3px;
   right: 100%;
   padding: 10px;
   z-index: 10;
@@ -1887,7 +1889,7 @@ header nav .sub-menu {
     z-index: 0;
     max-width: 190px;
     width: 100%;
-    height: 157px;
+    height: 162px;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -2329,7 +2331,8 @@ footer {
   background-size: cover; }
   @media (max-width: 768px) {
     footer {
-      background: #0B63F6; } }
+      background: -o-linear-gradient(279.53deg, #0B63F6 0%, #003CC5 100%);
+      background: linear-gradient(170.47deg, #0B63F6 0%, #003CC5 100%); } }
 
 .footer-container {
   display: grid;
@@ -2364,10 +2367,15 @@ footer {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 300px; }
+  height: 300px;
+  position: relative; }
+  @media (max-width: 1368px) {
+    .footer-box-info {
+      left: 6%; } }
   @media (max-width: 990px) {
     .footer-box-info {
       height: auto;
+      left: 0;
       background: transparent;
       grid-column-start: 1;
       grid-column-end: 2;
@@ -2471,11 +2479,12 @@ footer {
     font: 700 .87rem 'Barlow', sans-serif; }
   .footer-nav a {
     color: #fff;
-    font: 500 .8rem 'Barlow', sans-serif;
+    font: 500 .85rem 'Barlow', sans-serif;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    letter-spacing: 2px; }
     .footer-nav a:hover {
       color: #ffb90c; }
   .footer-nav .sub-menu {
@@ -2489,6 +2498,27 @@ footer {
         display: none; } }
     .footer-nav .sub-menu .menu-item {
       height: auto; }
+
+.footer-nav > li:nth-child(3) {
+  position: relative;
+  left: -35px; }
+  @media (max-width: 990px) {
+    .footer-nav > li:nth-child(3) {
+      left: 0; } }
+
+.footer-nav > li:nth-child(4) {
+  position: relative;
+  left: -25px; }
+  @media (max-width: 990px) {
+    .footer-nav > li:nth-child(4) {
+      left: 0; } }
+
+.footer-nav .sub-menu {
+  margin-top: 10px; }
+
+.footer-nav .sub-menu > li > a {
+  font: 300 .75rem 'Barlow', sans-serif;
+  letter-spacing: 1.4px; }
 
 .footer-about {
   display: -webkit-box;
@@ -2568,18 +2598,18 @@ footer {
   background: #fff;
   max-width: 425px;
   margin: 0 auto;
-  padding: 25px 60px; }
+  padding: 15px 40px; }
   @media (max-width: 990px) {
     .white-popup-block {
-      padding: 25px; } }
+      padding: 20px; } }
   .white-popup-block .modal-title {
     text-align: center;
     padding-top: 40px;
     font: normal 2rem/40px 'Barlow', sans-serif;
     color: #00226E;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     position: relative;
-    margin-bottom: 25px; }
+    margin-bottom: 20px; }
     @media (max-width: 990px) {
       .white-popup-block .modal-title {
         padding-top: 0;
@@ -2623,24 +2653,24 @@ footer {
   .modal-form textarea {
     border: 1px solid #003ABD;
     padding: 15px;
-    height: 115px;
+    height: 100px;
     resize: none;
     margin-bottom: 30px; }
     @media (max-width: 990px) {
       .modal-form textarea {
         margin-bottom: 20px; } }
   .modal-form .input-simple {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     border: none;
-    padding: 10px 0;
+    padding: 5px 0;
     border-bottom: 1.25px solid #003ABD; }
     @media (max-width: 990px) {
       .modal-form .input-simple {
-        margin-bottom: 15px; } }
+        margin-bottom: 8px; } }
     .modal-form .input-simple:focus {
       border-bottom: 1.25px solid #ffc201; }
   .modal-form .checkbox-wrap {
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
     @media (max-width: 990px) {
       .modal-form .checkbox-wrap {
         margin-bottom: 20px; } }
