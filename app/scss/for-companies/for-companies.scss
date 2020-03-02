@@ -1,10 +1,13 @@
 .for-companiens-screen {
     background: url(../img/about/about-bg.png) no-repeat center center;
     background-size: cover;
-    height: 90vh;
-    margin-bottom: 40px;
-    @media (max-width: 990px) {
+    height: 800px;
+    margin-bottom: -20px;
+    position: relative;
+    @media (max-width: 1200px) {
         margin-bottom: 0;
+    }
+    @media (max-width: 990px) {
         height: 100vh;
     }
     .container {
@@ -44,32 +47,27 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    right: -50px;
     max-width: 800px;
     position: relative;
-    bottom: -110px;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+    bottom: -120px;
     background: #fff;
-    padding: 30px 20px;
+    padding: 30px 70px;
     overflow: hidden;
     color: #00226E;
+    z-index: 2;
     @media (max-width: 990px) {
         bottom: 0;
         padding: 15px;
     }
-    &::before {
-        content: url(../img/for-companiens/sota-bg.png);
-        position: absolute;
-        left: -10px;
-        @media (max-width: 990px) {
-            display: none;
-        }
-    }
     .text-xl {
         line-height: 31px;
-        font-size: 2rem;
+        font-size: 1.9rem;
         font-weight: bold;
         text-align: center;
         position: relative;
-        color: #00226E;
+        color: #0a5ff1;
         z-index: 2;
         @media (max-width: 990px) {
             font-size: 1.1rem;
@@ -100,7 +98,7 @@
         position: absolute;
         z-index: -2;
         right: -50px;
-        bottom: -250px;
+        bottom: -320px;
         @media (max-width: 990px) {
             display: none;
         }
@@ -108,12 +106,23 @@
     .big-text {
         font-size: 1.2rem;
         max-width: 1000px;
-        margin-bottom: 40px;
         font-weight: 600;
+        margin-bottom: 5px;
+        br {
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
         @media (max-width: 990px) {
             font-size: 1rem;
             margin-bottom: 25px;
         }
+    }
+}
+
+.opaciti-punk {
+    &::after {
+        opacity: 0;
     }
 }
 
@@ -136,9 +145,21 @@
         margin: 0 auto;
         margin-right: 50px;
         position: relative;
-        z-index: 2;
         background: #fff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &::before {
+            content: '';
+            border: 3px dashed #00226E;
+            height: 350px;
+            width: 1px;
+            position: absolute;
+            display: block;
+            top: -354px;
+            left: 48%;
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
         @media (max-width: 990px) {
             margin: 0 auto;
         }
@@ -236,7 +257,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 105px;
+    min-height: 150px;
     padding: 10px 15px;
     border: 1px solid #C4C4C4; 
     background: transparent;
@@ -436,14 +457,18 @@
         }
     }
     .foreign-box-sm {
-        padding: 15px;
+        padding: 20px;
         background: #FFFFFF;
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
         border-radius: 2px;
-        max-width: 500px;
+        max-width: 450px;
         margin: 0 auto;
         position: relative;
         z-index: 2;
+        top: 16px;
+        @media (max-width: 990px) {
+            top: 0;
+        }
     }
 }
 
@@ -464,7 +489,7 @@
         content: url(../img/for-companiens/line.svg);
         position: absolute;
         right: 350px;
-        top: 80px;
+        top: 60px;
         z-index: -2;
         @media (max-width: 990px) {
             display: none;
@@ -499,6 +524,9 @@
         @media (max-width: 1200px) {
             max-width: 450px;
         }
+        p {
+            font-weight: 500;
+        }
     }
 
     .btn-gold-wrapper {
@@ -530,6 +558,7 @@
     }
     .bestseller-text-box {
         padding: 25px;
+        font-weight: 500;
         @media (max-width: 990px) {
             padding: 20px;
         }
@@ -538,13 +567,13 @@
         color: #00226E;
         text-align: center;
         .demand-title {
-            text-decoration: underline;
             margin-bottom: 5px;
             font: 700 1.5rem 'Barlow', sans-serif;
             color: #2f6ee7;
         }
         .demand-text {
             color: #2f6ee7;
+            font-weight: 400;
         }
     }
     .btn-gold {

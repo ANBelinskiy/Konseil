@@ -61,7 +61,7 @@
 .contacts-box {
     background: url(../img/contact-services/bg.png) no-repeat center;
     background-size: contain;
-
+    padding-top: 50px;
     @media (max-width: 990px) {
         background-size: cover;
     }
@@ -289,7 +289,6 @@
     height: 496px;
     position: relative;
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
-
     & iframe {
         width: 100%;
         height: 100%;
@@ -308,16 +307,6 @@
     @media (max-width: 380px) {
         width: 100%;
         height: 200px;
-    }
-
-    .map-overlay {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: #00226E;
-        opacity: 0.3;
     }
 }
 

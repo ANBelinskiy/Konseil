@@ -103,77 +103,38 @@ $(document).ready(function() {
 
 
 
-
-
-
     $("#modal-home").submit(function() {
-
-
 
         var form_data = $(this).serializeArray();
 
-
-
         $.ajax({
-
-
 
             type: "POST",
 
-
-
             url: "../../mail.php",
-
-
 
             data: form_data,
 
-
-
             success: function() {
 
-
-
                 $('.call-thank').click();
-
-
 
                 console.log("send");
 
-
-
             },
-
-
 
             error: function() {
 
-
-
                 alert("Ошибка");
-
-
 
                 $('.call-thank').click();
 
-
-
             }
-
-
 
         });
 
 
-
-
-
-
-
         return false;
-
-
-
     });
 
 

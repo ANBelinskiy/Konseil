@@ -1,6 +1,7 @@
 header {
     position: absolute;
     width: 100%;
+    z-index: 999;
     @media (max-width: 1280px) {
         width: 94%;
         padding: 0 35px;
@@ -13,7 +14,6 @@ header {
         right: -1px;
         padding: 0 20px;
         top: -1px;
-        z-index: 9999;
         box-shadow: 0 0 15px rgba(0, 0, 0, .2);
     }
     @media (max-width: 576px) {

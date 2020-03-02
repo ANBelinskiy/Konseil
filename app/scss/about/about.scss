@@ -181,10 +181,16 @@
     }
 
     .about-main-box {
-        margin-top: 200px;
+        margin-top: 250px;
+        @media (max-width: 1440px) {
+            margin-top: 170px;
+        }
 
-        @media (min-width: 990px) and (max-height: 748px) {
+        @media (max-width: 990px) and (min-height: 748px) {
             margin-top: 130px;
+        }
+        @media (max-width: 576px) {
+            margin-top: 150px;
         }
         .about-main-text {
             color: #00226E;
@@ -211,31 +217,31 @@
 }
 
 .poster {
-    max-width: 1016px;
-    height: 576px;
-    background: #FFFFFF;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    max-width: 756px;
+    height: auto;
+    background: #FFF;
+    box-shadow: 4px 4px 12px rgba(0,0,0,.25);
     border-radius: 2px;
     margin: 0 auto;
-    margin-top: -150px;
+    margin-top: -400px;
     margin-bottom: 132px;
     box-sizing: border-box;
-    padding: 39px 130px 39px 130px;
+    padding: 0;
 
-    @media (max-width: 1280px) {
-        max-width: 880px;
-        height: 506px;
-        padding: 29px 110px 29px 110px;
+    @media (max-width: 1700px) {
+        margin-top: -300px;
+    }
+
+    @media (max-width: 1600px) {
+        margin-top: -150px;
     }
 
     @media (max-width: 990px) {
-        padding: 20px 60px 20px 60px;
         width: 80%;
         height: 100%;
     }
 
     @media (max-width: 576px) {
-        padding: 10px;
         width: 95%;
         margin-top: -80px;
     }
@@ -250,7 +256,8 @@
 
     & .container {
         display: flex;
-
+        align-items: center;
+        justify-content: center;
         @media (max-width: 990px) {
             flex-direction: column;
         }
@@ -377,8 +384,14 @@
 
 
 .about-info {
-    background: url(../img/services/services.png) no-repeat center;
-    background-size: cover;
+    position: relative;
+    &::before {
+        content: url(../img/services/services.png);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -200px;
+    }
 }
 
 .quote {
@@ -534,11 +547,15 @@
 }
 
 .team {
-    background: url(../img/about/otherbg.png) no-repeat center;
-    background-size: cover;
-
-
+    position: relative;
     padding-top: 50px;
+    // &::before {
+    //     content: url(../img/about/otherbg.png);
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     top: -100px
+    // }
 
     @media (max-width: 990px) {
         padding-bottom: 250px;
@@ -706,9 +723,14 @@
 .seminar {
     padding-top: 50px;
     padding-bottom: 100px;
-    background: url(../img/services/services.png) no-repeat center;
-    background-size: cover;
-
+    position: relative;
+    &::before {
+        content: url(../img/services/services.png);
+        position: absolute;
+        left: 0;
+        top: -500px;
+        right: 0;
+    }
     @media (max-width: 576px) {
         padding-bottom: 40px;
     }
